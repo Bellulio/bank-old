@@ -1,7 +1,5 @@
 package types
 
-import "go/types"
-
 //Money представляет собой денежную сумму в миимальных единицах (центы, копейки, дирамы и т.д.)
 type Money int64
 
@@ -41,4 +39,3 @@ type PaymentSource struct{
     Number string // номер вида '5058 xxxx xxxx 8888'
    
 }
-
