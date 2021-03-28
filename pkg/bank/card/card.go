@@ -14,6 +14,7 @@ func IssueCard(currency types.Currency, color string, name string) types.Card   
 		Color: color,
 		Name: name,
 		Active: true,
+		Balance: types.Money,
 	}
 	return card	
 }

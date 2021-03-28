@@ -39,6 +39,6 @@ type Card struct {
 type PaymentSource struct{
     Type string // 'card'
     Number string // номер вида '5058 xxxx xxxx 8888'
-    Balance types.Money // баланс в дирамах
+   
 }
 
