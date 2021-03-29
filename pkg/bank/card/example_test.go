@@ -5,21 +5,39 @@ import (
 	"bank/pkg/bank/types"
 )
 
-func PaymentSours_possitive() {
-	cards:= []types.PaymentSouce{
-    {
-        ID: "5058 xxxx xxxx 9999",
-        Amount: 999_99,
-    },
-    {
-        ID: "5058 xxxx xxxx 8888",
-        Amount: 888_88,
-    },
+func PaymentSource(cards []types.Card)[]types.PaymentSource{
+	var payments []types.PaymentSource
+	for _, card := range cards{
+		if !card.Active || card.Balance <= 0{
+			continue
+		}
+		return payments
+	}
 }
+func ExamplePaymentSource_possitive(){
+	card:= []types.Card{
+    {
+       Balance : 999_99,
+	   PAN : "5058 xxxx xxxx 9999",
+	   Active: true,
+    },
+	fmt.Println(PaymentSouce(card)),
+	//Output:"5058 xxxx xxxx 9999" 
+}
+}
+	func ExamplePaymentSource_positive(){
+		
+		card:= []types.Card{
+		{
+		   Balance : 888_88,
+		   PAN : "5058 xxxx xxxx 8888",
+		   Active: true,
+		},
+		fmt.Println(PaymentSouce(card)),
+		//Output:"5058 xxxx xxxx 8888" 
+	}
+ 
+      
 
 Number == card.PAN
 fmt.Println(PaymentSource.ID)
-
-	//Output: 
-	//50000
-}

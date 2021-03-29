@@ -3,38 +3,10 @@ import (
 	"bank/pkg/bank/types"
 
 )
-
-
-func IssueCard(currency types.Currency, color string, name string) types.Card   {
-	card := types.Card{
-		ID: 1000,
-		PAN: "5058 xxxx xxxx 0001",
-		Balance: 0,
-		Currency: currency,
-		Color: color,
-		Name: name,
-		Active: true,
-		Balance: types.Money,
-	}
-	return card	
-}
-
-func PaymentSours(cards[]types.Card)[]types.PaymentSource {
-	//TODO:
-
-	if card.Active == false{
-		return 
-	}
-	if amount < 0{
-		return 
-	}
-	card.Balance -= amount
-		
-}
 func main(){
 	var operations []int64
-	operations = append(operations, 999_99)
-	operations = append(operations, 888_88)
+	operations = append(operations)
+	operations = append(operations)
 	
 		sum := sum(operations)
 		max := max(operations)
@@ -43,19 +15,26 @@ func main(){
 	fmt.Println(max)
 }
 func sum(operations []int64) int64  {
-	sum := int64(0), 
-	for_, operation := range operations{
+	sum := int64(0) 
+	for _, operation := range operations {
 	sum += operation
 	}
 	return sum
 	}
 	
-	func max(operations) []int64) int64  {
-		max := operations[0], 
-		for_, operation := range operoperations{
-		if max <= opoperation{
-			max = operation
-		}
-		}
-		return max	
+	func PaymentSource(cards []types.Card)[]types.PaymentSource{
+var payments []types.PaymentSource
+for _, card:= range cards{
+	if !card.Active || card.Balance<=0 {
+		continue
+	}
+	return payments
+}
+	}
+	fmt.Println(payment[0].Number)
+	fmt.Println(payment[1].Number)
+	fmt.Println(payment[2].Number)
+	fmt.Println(payment[n].Number)
+	Number == card.PAN
+		
 }

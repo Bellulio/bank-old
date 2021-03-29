@@ -1,19 +1,10 @@
 package main
 
-import  ("bank/pkg/bank/types")
+import  ("bank/pkg/bank/types"
+		 "fmt")
 
-type Card struct{
-		ID          int
-		PAN         string
-		Balance     int
-		Currency    string
-		Color       string
-		Name        string
-		Active      bool    
-		}
-
-		func main (){
-			card:= Card {
+func main (){
+var card = types.Card {
 	ID:          22345,
 	PAN:         "5058 xxxx xxxx 9999",
 	Balance:     999_99,
@@ -21,32 +12,22 @@ type Card struct{
 	Color:       "white",
 	Name:        "Infinity",
 	Active:      true,    
-	},
-
-	fmt.Printf("%+v", card)
-	handle(card)
 	}
-	func handle(card Card)  {
-		//TODO:
+var card= types.Card {	
 		
-	}
-	{
+	ID:          22345,
+	PAN:         "5058 xxxx xxxx 8888",
+	Balance:     888_88,
+	Currency:    "TJS",
+	Color:       "white",
+	Name:        "Infinity",
+	Active:      true,    	
+    }
 		
-		ID:          22345,
-		PAN:         "5058 xxxx xxxx 8888",
-		Balance:     888_88,
-		Currency:    "TJS"
-		Color:       "white"
-		Name:        "Infinity"
-		Active:      true,    	
-    },
-		}
-
+}
 
 fmt.Printf("%+v", card)
 handle(card)
-}
-func handle(card Card)  {
-	//TODO:
+
 	
 }
