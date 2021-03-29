@@ -12,9 +12,8 @@ var card = types.Card {
 	Color:       "white",
 	Name:        "Infinity",
 	Active:      true,    
-	}
-var card= types.Card {	
-		
+	};
+	var cards = types.Card {
 	ID:          22345,
 	PAN:         "5058 xxxx xxxx 8888",
 	Balance:     888_88,
@@ -23,11 +22,11 @@ var card= types.Card {
 	Name:        "Infinity",
 	Active:      true,    	
     }
-		
+
 }
+
 
 fmt.Printf("%+v", card)
 handle(card)
 
-	
-}
+
