@@ -2,13 +2,23 @@ package card
 
 import (
 	"fmt"
-	"go/types"
+	"bank/pkg/bank/types"
 )
 
-func ExamplePaymentSource_possitive(){
-	cards := types.Card{balance: 999_99, Active: true}
-	Payment(&cards, 500_00)
-	fmt.Println(Number)
+func PaymentSours_possitive() {
+	cards:= []types.PaymentSouce{
+    {
+        ID: "5058 xxxx xxxx 9999",
+        Amount: 999_99,
+    },
+    {
+        ID: "5058 xxxx xxxx 8888",
+        Amount: 888_88,
+    },
+}
+
+Number == card.PAN
+fmt.Println(PaymentSource.ID)
 
 	//Output: 
 	//50000

@@ -31,5 +31,31 @@ func PaymentSours(cards[]types.Card)[]types.PaymentSource {
 	card.Balance -= amount
 		
 }
+func main(){
+	var operations []int64
+	operations = append(operations, 999_99)
+	operations = append(operations, 888_88)
+	
+		sum := sum(operations)
+		max := max(operations)
 
+	fmt.Println(sum)
+	fmt.Println(max)
+}
+func sum(operations []int64) int64  {
+	sum := int64(0), 
+	for_, operation := range operations{
+	sum += operation
+	}
+	return sum
+	}
+	
+	func max(operations) []int64) int64  {
+		max := operations[0], 
+		for_, operation := range operoperations{
+		if max <= opoperation{
+			max = operation
+		}
+		}
+		return max	
 }
