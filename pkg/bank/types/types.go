@@ -7,16 +7,17 @@ type Money int64
 type Currency string
 
 //Payment представляет информацию о платеже.
-type Payment struct{
+type Payment struct {
     ID int
     Amount Money
 }
 
+
 // Коды валют
 const(
-TJS Currency = "TJS"
-RUB Currency = "RUB"
-USD Currency = "USD"
+	TJS Currency = "TJS"
+	RUB Currency = "RUB"
+	USD Currency = "USD"
 )
 
 // PAN представляет номер карты
@@ -33,9 +34,8 @@ type Card struct {
 	Active      bool    
 	}
 
-type PaymentSource struct{
+type PaymentSource struct {
     Type string // 'card'
     Number string // номер вида '5058 xxxx xxxx 8888'
 	Balance Money //баланс в дирамах
-   
 }

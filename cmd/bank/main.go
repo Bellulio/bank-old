@@ -1,7 +1,9 @@
 package main
 
-import  ("bank/pkg/bank/types"
-		 "fmt")
+import  (
+	"bank/pkg/bank/types"
+	 "fmt"
+	)
 
 func main (){
 var card = types.Card {
@@ -12,7 +14,8 @@ var card = types.Card {
 	Color:       "white",
 	Name:        "Infinity",
 	Active:      true,    
-	};
+    };
+
 	var cards = types.Card {
 	ID:          22345,
 	PAN:         "5058 xxxx xxxx 8888",
@@ -21,8 +24,8 @@ var card = types.Card {
 	Color:       "white",
 	Name:        "Infinity",
 	Active:      true,    	
- 
-
-
-fmt.Printf("%+v", card),
-handle(card),}
+	
+    fmt.Printf("%+v", card),
+    handle(card),
+    }
+}
