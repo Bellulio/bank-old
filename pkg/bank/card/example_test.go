@@ -36,8 +36,8 @@ func ExamplePaymentSource_possitive(){
 		fmt.Println(PaymentSouce(card)),
 		//Output:"5058 xxxx xxxx 8888" 
 	}
+	}
  
-      
-
 Number == card.PAN
 fmt.Println(PaymentSource.ID)
+}

@@ -21,12 +21,8 @@ var card = types.Card {
 	Color:       "white",
 	Name:        "Infinity",
 	Active:      true,    	
-    }
-
-}
+ 
 
 
-fmt.Printf("%+v", card)
-handle(card)
-
-
+fmt.Printf("%+v", card),
+handle(card),}
